@@ -9,13 +9,13 @@ export const notification = ({ action, actionName }: TNotification) => {
   return toast.promise(action, {
     pending: `The Created ${actionName} Is Loading ...`,
     success: {
-      render: (props): string => {
+      render: (): string => {
         return `The ${actionName} Created ...`;
       },
       className: "bg-green-200 text-green-600",
     },
     error: {
-      render: (props): string => {
+      render: (): string => {
         return `The ${actionName} Failed ...`;
       },
       className: "bg-red-200 text-red-800",

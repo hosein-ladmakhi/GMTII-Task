@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { useParams, useNavigate, Navigate, Link } from "react-router-dom";
+import { useParams, useNavigate, Navigate } from "react-router-dom";
 import { useDeleteTaskMutation, useSingleTaskQuery } from "../../features/tasks";
 import { linksPath } from "../../routes/path";
 import RelatedTask from "./components/RelatesTasks";
